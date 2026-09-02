@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedKeys | Fast & Accurate Typing Services in Padukka</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --accent-blue: #2563eb;
+            --glow-blue: #3b82f6;
+            --text-main: #ffffff;
+            --text-muted: #9ca3af;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: rgba(11, 15, 25, 0.9);
+            border-bottom: 1px solid #1f2937;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 1rem 4rem;
+            background: radial-gradient(circle at center, #1e3a8a 0%, var(--bg-color) 70%);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .badge {
+            background-color: var(--accent-blue);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .services-section {
+            padding: 4rem 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: var(--text-main);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #1f2937;
+            border-radius: 8px;
+            padding: 1.8rem;
+            text-align: center;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--glow-blue);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-tag {
+            background-color: var(--card-bg);
+            border: 2px solid var(--accent-blue);
+            max-width: 400px;
+            margin: 3rem auto 0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .price-tag span {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--glow-blue);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #05070c;
+            border-top: 1px solid #1f2937;
+            color: var(--text-muted);
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            background-color: var(--accent-blue);
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--glow-blue);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100" height="100" rx="20" fill="#2563EB"/>
+                <path d="M25 35H75M25 50H65M25 65H50" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                <path d="M60 65L75 45L85 65" stroke="#60A5FA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Speed<span style="color: var(--glow-blue);">Keys</span></span>
+        </div>
+        <div>📍 Padukka</div>
+    </header>
+
+    <section class="hero">
+        <span class="badge">Professional Typing Services</span>
+        <h1>Fast, Accurate & Reliable</h1>
+        <p>Expert English & Sinhala document typing for students, teachers, and professionals in Padukka.</p>
+    </section>
+
+    <section class="services-section">
+        <h2 class="section-title">What We Type</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Sinhala Typing</h3>
+                <p>Unicode & FM Fonts</p>
+            </div>
+            <div class="card">
+                <h3>English Typing</h3>
+                <p>Clean formatting & accuracy</p>
+            </div>
+            <div class="card">
+                <h3>Notes & Tutes</h3>
+                <p>Lectures, classes & study guides</p>
+            </div>
+            <div class="card">
+                <h3>Assignments</h3>
+                <p>School & University projects</p>
+            </div>
+            <div class="card">
+                <h3>Exam Papers</h3>
+                <p>Questions, tests & assessments</p>
+            </div>
+        </div>
+
+        <div class="price-tag">
+            <p>Affordable Rates</p>
+            <p>Starting at <span>LKR 40</span> / page</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Get Your Documents Typed Today</h2>
+        <p>Location: Padukka, Sri Lanka</p>
+        <a href="tel:+94000000000" class="contact-btn">Call / WhatsApp Us</a>
+        <p style="margin-top: 2rem; font-size: 0.85rem;">&copy; 2026 SpeedKeys Typing Business. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
